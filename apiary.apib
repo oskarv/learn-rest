@@ -1,0 +1,33 @@
+FORMAT: 1A
+HOST: http://rest.oskarv.com
+
+# Learning REST
+A Simple API for learning purposes
+
+# Group Endpoints
+Group access to all resources
+
+## My Information [/info]
+
+### Get my info [GET]
++ Request
+    
+    + Header
+        
+            Authorization: Basic dXNlcjpwYXNzd29yZA==
+            x-api-version: 1.0
+
+    
++ Response 200 (application/json)
+
+    + Header
+            
+            Etag: "qwerty"
+            cache-control: max-age=600
+
+    + Body 
+    
+            {
+                name: 'Oskar',
+                linkedin: 'linkedin.com/in/oskarvat',
+            }
